@@ -1173,6 +1173,10 @@ button {
     display: none;
   }
 
+  .header-wa-btn {
+    display: none !important;
+  }
+
   .mobile-toggle {
     display: block;
   }
