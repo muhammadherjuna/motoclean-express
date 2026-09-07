@@ -149,6 +149,7 @@ button {
   font-size: 1rem;
   transition: var(--transition-normal);
   text-align: center;
+  white-space: nowrap;
 }
 
 .btn-primary {
@@ -210,6 +211,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
 }
 
 .brand-logo {
@@ -219,6 +221,7 @@ button {
   font-family: var(--font-heading);
   font-weight: 800;
   font-size: 1.35rem;
+  flex-shrink: 0;
 }
 
 .brand-logo .logo-icon {
@@ -236,7 +239,12 @@ button {
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: clamp(14px, 1.8vw, 28px);
+}
+
+.header-wa-btn {
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .nav-link {
