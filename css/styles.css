@@ -245,6 +245,7 @@ button {
   color: var(--text-muted);
   transition: var(--transition-fast);
   position: relative;
+  white-space: nowrap;
 }
 
 .nav-link:hover, .nav-link.active {
@@ -1235,9 +1236,21 @@ button {
     font-size: 1.75rem;
   }
 
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
   .hero-stats {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 16px;
+    text-align: center;
   }
 
   .pricing-comparison {
